@@ -1,0 +1,4 @@
+1.0.4 - 2018-12-12
+==================
+
+* auto upload to Pypi using Circle CI
