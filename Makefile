@@ -1,6 +1,6 @@
 # From: https://github.com/levlaz/circleci.py/blob/master/Makefile
 
-.PHONY: help clean dev docs package test
+.PHONY: help clean dev package test
 
 help:
 	@echo "This project assumes that an active Python virtualenv is present."
