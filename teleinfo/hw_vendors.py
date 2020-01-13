@@ -51,3 +51,12 @@ class SolarBox_USB(HW_serial_based):
     def __init__(self, port="/dev/ttyUSB0", *args, **kwargs):
         super(SolarBox_USB, self).__init__(port, *args, **kwargs)
         raise NotImplementedError()
+
+class UTInfo2(HW_serial_based):
+    def __init__(self, port="/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_TINFO-1631-if00-port0", *args, **kwargs):
+        super(UTInfo2, self).__init__(port, *args, **kwargs)
+
+    def read_char(self):
+        return self._serial_port.read(1)
+
+
