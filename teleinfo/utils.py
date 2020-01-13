@@ -6,7 +6,7 @@ def frame_to_json():
 
     import sys
     import teleinfo
-    from teleinfo.hw_vendors import RpiDom, SolarBox_USB
+    from teleinfo.hw_vendors import RpiDom, SolarBox_USB, UTInfo2
     import getopt
     import json
 
@@ -15,7 +15,8 @@ def frame_to_json():
 
     SUPPORTED_DEVICES = {
         "RpiDom": RpiDom,
-        "SolarBox_USB": SolarBox_USB
+        "SolarBox_USB": SolarBox_USB,
+        "UTInfo2": UTInfo2
     }
 
     def usage():
