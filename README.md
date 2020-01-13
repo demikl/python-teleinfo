@@ -1,3 +1,8 @@
+* Build: [![CircleCI](https://circleci.com/gh/demikl/python-teleinfo.svg?style=svg)](https://circleci.com/gh/demikl/python-teleinfo)
+* Unit tests: [![codecov](https://codecov.io/gh/demikl/python-teleinfo/branch/master/graph/badge.svg)](https://codecov.io/gh/demikl/python-teleinfo)
+
+
+
 # python-teleinfo
 Read and parse teleinfo data from France EDF electricity provider
 
