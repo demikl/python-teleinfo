@@ -36,6 +36,7 @@ setup(
     license='MIT',
     description='EDF Teleinfo frame acquisition',
     long_description=readme(),
+    long_description_content_type='text/markdown',
     packages=['teleinfo'],
     install_requires=['pyserial'],
     classifiers=[
