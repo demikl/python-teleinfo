@@ -32,6 +32,8 @@ Le parseur supporte aussi l'itération :
 * SolarBox_USB
 * UTInfo 2.0 USB Dongle from Charles Hallard (http://hallard.me/utinfo/)
 
+## Example
+
 ```
 >>> import teleinfo
 >>> from teleinfo import Parser
