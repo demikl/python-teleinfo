@@ -32,14 +32,18 @@ Le parseur supporte aussi l'itération :
 * SolarBox_USB
 * UTInfo 2.0 USB Dongle from Charles Hallard (http://hallard.me/utinfo/)
 
+## Example
 
+```
 >>> import teleinfo
 >>> from teleinfo import Parser
 >>> from teleinfo.hw_vendors import UTInfo2
 >>> ti = Parser(UTInfo2())
 >>> ti.get_frame()
+
 {'PPOT': '00', 'MOTDETAT': '000000', 'OPTARIF': 'HC..', 'IMAX3': '060', 'IMAX1': '060', 'ADCO': '021876647540', 'HCHC': '002234766', 'PAPP': '08490', 'HHPHC': 'A', 'IINST1': '010', 'IMAX2': '060', 'IINST3': '016', 'IINST2': '008', 'PTEC': 'HP..', 'ISOUSC': '20', 'PMAX': '11690', 'HCHP': '011085557'}
+
 >>> for frame in Parser(UTInfo2()):
 ...     print frame
 ...
-
+```
