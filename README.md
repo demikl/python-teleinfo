@@ -31,7 +31,7 @@ Le parseur supporte aussi l'itération :
 
 * RpiDom
 * SolarBox_USB
-* MircoTeleinfo USB Dongle from Charles Hallard (https://www.tindie.com/products/hallard/micro-teleinfo-v20/)
+* uTeleinfo USB Dongle from Charles Hallard (https://www.tindie.com/products/hallard/micro-teleinfo-v20/)
 * PITinfo Raspberry PI hat from Charles Hallard (https://www.tindie.com/products/hallard/pitinfo/)
 
 ## Example
