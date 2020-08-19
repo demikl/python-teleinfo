@@ -6,7 +6,7 @@ def frame_to_json():
 
     import sys
     import teleinfo
-    from teleinfo.hw_vendors import RpiDom, SolarBox_USB, UTInfo2
+    from teleinfo.hw_vendors import RpiDom, SolarBox_USB, UTInfo2, PITInfo
     import getopt
     import json
 
