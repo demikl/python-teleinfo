@@ -16,7 +16,8 @@ def frame_to_json():
     SUPPORTED_DEVICES = {
         "RpiDom": RpiDom,
         "SolarBox_USB": SolarBox_USB,
-        "UTInfo2": UTInfo2
+        "UTInfo2": UTInfo2,
+        "PITInfo": PITInfo
     }
 
     def usage():

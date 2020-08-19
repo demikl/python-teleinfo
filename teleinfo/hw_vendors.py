@@ -59,4 +59,11 @@ class UTInfo2(HW_serial_based):
     def read_char(self):
         return self._serial_port.read(1)
 
+class PITInfo(HW_serial_based):
+    def __init__(self, port="/dev/ttyAMA0", *args, **kwargs):
+        super(PITInfo, self).__init__(port, *args, **kwargs)
+
+    def read_char(self):
+        return self._serial_port.read(1)
+
 
