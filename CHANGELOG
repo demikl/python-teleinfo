@@ -1,3 +1,8 @@
+1.2.1 - 2020-08-28
+==================
+
+* Remove testing on python 3.4 since some dependencies can not be satisfied anymore
+
 1.2.0 - 2020-08-28
 ==================
 

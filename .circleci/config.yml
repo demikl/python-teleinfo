@@ -29,41 +29,6 @@ jobs:
             make test
             codecov
 
-  test34:
-    docker:
-      - image: circleci/python:3.4
-    steps:
-      - checkout
-
-      - restore_cache:
-          key: v1-dependency-cache-{{ checksum "setup.py" }}-{{ checksum "Makefile" }}
-
-      - run:
-          name: install python dependencies
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install --upgrade pip
-            make dev
-
-      - save_cache:
-          key: v1-dependency-cache-{{ checksum "setup.py" }}-{{ checksum "Makefile" }}
-          paths:
-            - "venv"
-
-      - run:
-          name: run tests
-          command: |
-            . venv/bin/activate
-            make test
-            codecov
-
-      - run:
-          name: Smoke Test Install
-          command: |
-            python --version
-            sudo pip3 install teleinfo
-
   test35:
     docker:
       - image: circleci/python:3.5
@@ -261,9 +226,6 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - test34:
-          requires:
-            - build
       - test35:
           requires:
             - build
