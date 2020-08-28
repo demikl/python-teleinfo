@@ -31,7 +31,8 @@ Le parseur supporte aussi l'itération :
 
 * RpiDom
 * SolarBox_USB
-* UTInfo 2.0 USB Dongle from Charles Hallard (http://hallard.me/utinfo/)
+* uTeleinfo USB Dongle from Charles Hallard (https://www.tindie.com/products/hallard/micro-teleinfo-v20/)
+* PITinfo Raspberry PI hat from Charles Hallard (https://www.tindie.com/products/hallard/pitinfo/)
 
 ## Example
 
@@ -48,3 +49,26 @@ Le parseur supporte aussi l'itération :
 ...     print frame
 ...
 ```
+
+Appel avec changement de port (ici `/dev/ttyUSB0`) pour un module Micro Teleinfo 
+```python
+#!/usr/bin/env python
+from teleinfo import Parser
+from teleinfo.hw_vendors import UTInfo2
+ti = Parser(UTInfo2(port="/dev/ttyUSB0"))
+print ti.get_frame()
+```
+
+Script avec changement de vitesse (ici `9600`) pour un module PITInfo en mode standard sur un Linky
+```python
+#!/usr/bin/env python
+from teleinfo import Parser
+from teleinfo.hw_vendors import PITInfo
+ti = Parser(PITInfo(baudrate=9600))
+print ti.get_frame()
+```
+
+
+
+
+
