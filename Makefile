@@ -12,7 +12,8 @@ clean:
 	rm -rf dist/*
 
 dev:
-	pip install coverage
+	pip install --upgrade pip
+        pip install coverage
 	pip install codecov
 	pip install pylint
 	pip install twine
