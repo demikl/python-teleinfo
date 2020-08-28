@@ -13,7 +13,7 @@ clean:
 
 dev:
 	pip install --upgrade pip
-        pip install coverage
+	pip install coverage
 	pip install codecov
 	pip install pylint
 	pip install twine
