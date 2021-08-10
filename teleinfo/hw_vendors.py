@@ -3,19 +3,9 @@
 import serial
 import time
 from abc import ABCMeta, abstractmethod
+from .base_vendor import BASE_vendor
 
-class HW_vendor():
-    __metaclass__ = ABCMeta
-
-    @abstractmethod
-    def read_char(self):
-        pass
-
-    def __iter__(self):
-        while True:
-            yield self.read_char()
-
-class HW_serial_based(HW_vendor):
+class HW_serial_based(BASE_vendor):
     __metaclass__ = ABCMeta
 
     BAUDRATE = 1200

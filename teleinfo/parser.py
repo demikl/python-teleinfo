@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from .hw_vendors import HW_vendor
+from .base_vendor import BASE_vendor
 import itertools
 import logging
 
@@ -12,7 +12,7 @@ class Parser:
     MARKER_END_LINE = '\r\n'
 
     def __init__(self, hw=None):
-        assert hw is not None and isinstance(hw, HW_vendor)
+        assert hw is not None and isinstance(hw, BASE_vendor)
         self._hw = hw
         self._synchro_debut_trame()
 
