@@ -1,6 +1,12 @@
 1.3.0 - 2021-12-14
 ==================
 
+* forgot to update version 1.3 inside setup.py
+
+
+1.3.0 - 2021-12-14
+==================
+
 * remote serial through a TCP connection
 
 

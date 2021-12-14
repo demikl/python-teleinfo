@@ -6,7 +6,7 @@ import sys
 from setuptools import setup
 from setuptools.command.install import install
 
-VERSION = "1.2.1"
+VERSION = "1.3.1"
 
 def readme():
     """print long description"""
